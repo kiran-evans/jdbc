@@ -1,0 +1,11 @@
+package com.ke.dao;
+
+import java.sql.Connection;
+import java.sql.Statement;
+
+public class MovieDAO {
+	
+	private Statement statement;
+	private Connection connection;
+	
+}

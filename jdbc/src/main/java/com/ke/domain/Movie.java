@@ -2,6 +2,7 @@ package com.ke.domain;
 
 public class Movie {
 	
+	private int id;
 	private String name;
 	private String genre;
 	private String rating;
@@ -9,12 +10,27 @@ public class Movie {
 	
 	public Movie() {}
 
-	public Movie(String name, String genre, String rating, boolean is3d) {
-		super();
+	public Movie(int id, String name, String genre, String rating, boolean is3d) {
+		this.id = id;
 		this.name = name;
 		this.genre = genre;
 		this.rating = rating;
 		this.is3d = is3d;
+	}
+
+	public Movie(String name, String genre, String rating, boolean is3d) {
+		this.name = name;
+		this.genre = genre;
+		this.rating = rating;
+		this.is3d = is3d;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public String getName() {
@@ -41,13 +57,12 @@ public class Movie {
 		this.rating = rating;
 	}
 
-	public boolean isIs3d() {
+	public boolean is3d() {
 		return is3d;
 	}
 
 	public void setIs3d(boolean is3d) {
 		this.is3d = is3d;
 	}
-	
 	
 }

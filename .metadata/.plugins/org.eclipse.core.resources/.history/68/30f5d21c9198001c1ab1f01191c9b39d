@@ -1,0 +1,8 @@
+package com.ke.dao;
+
+public class MovieDAO {
+	
+	private Statement statement;
+	private Connection connection;
+	
+}
