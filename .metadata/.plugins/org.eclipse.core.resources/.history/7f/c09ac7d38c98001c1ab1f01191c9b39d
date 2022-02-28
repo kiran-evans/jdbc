@@ -1,0 +1,14 @@
+package com.ke.domain;
+
+public class Movie {
+	
+	// Attributes
+	private String name;
+	private String genre;
+	private String rating;
+	private boolean is3d;
+	
+	public Movie() {}
+	
+	
+}
