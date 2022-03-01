@@ -10,9 +10,10 @@ public class Runner {
 	public static void main(String[] args) throws SQLException {
 		
 		Movie movieOne = new Movie("The Matrix", "Sci-Fi", "12", true);
+		Movie movieTwo = new Movie("Shrek", "Fantasy", "U", false);
 		MovieDAO dao = new MovieDAO();
 		
-		dao.create(movieOne);
+		System.out.println(dao.readAll());
 
 	}
 
